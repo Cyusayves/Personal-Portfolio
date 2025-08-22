@@ -76,3 +76,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// Dark/Light Mode Toggle with Icon
+const themeSwitch = document.getElementById('theme-switch');
+const themeIcon = document.getElementById('theme-icon');
+const currentTheme = localStorage.getItem('theme');
+
+function updateIcon(isLight) {
+  themeIcon.className = isLight ? 'bx bx-sun' : 'bx bx-moon';
+}
+
+if (currentTheme === 'light') {
+  document.body.classList.add('light-mode');
+  themeSwitch.checked = true;
+  updateIcon(true);
+} else {
+  updateIcon(false);
+}
+
+themeSwitch.addEventListener('change', () => {
+  const isLight = themeSwitch.checked;
+  document.body.classList.toggle('light-mode', isLight);
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  updateIcon(isLight);
+});
+
