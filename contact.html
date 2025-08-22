@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Murego Cyusa Yves</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2>Get In Touch</h2>
+      <p>If you'd like to collaborate, ask questions, or just say hello — drop me a message below!</p>
+
+      <!-- New Action Buttons -->
+      <div class="action-buttons">
+        <button class="btn" id="getInTouchBtn">
+          <i class='bx bx-phone'></i> Get in Touch
+        </button>
+
+        <a href="mailto:Muregocyusayves@gmail.com?subject=Hiring%20Inquiry&body=Hello%20Yves,%0D%0A%0D%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you." 
+           class="btn hire-btn">
+          <i class='bx bx-envelope'></i> Hire Me
+        </a>
+      </div>
+
+      <!-- Hidden Contact Info (appears when clicking Get in Touch) -->
+      <div class="hidden-contact" id="contactDetails">
+        <p><i class='bx bxl-whatsapp'></i> WhatsApp: <a href="https://wa.me/250785802539" target="_blank">+250 785 802 539 / +250 726 596 909</a></p>
+        <p><i class='bx bxl-telegram'></i> Telegram: <a href="https://t.me/CyusaYves" target="_blank">@CyusaYves</a></p>
+      </div>
+
+      <!-- Contact Form -->
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <p>📍 Kigali, Rwanda</p>
+        <p>📬 Available for freelance & at your service</p>
+        <div class="social-icons">
+          <a href="https://github.com/Cyusayves"><i class='bx bxl-github'></i></a>
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://x.com/Muregocyusayves"><i class='bx bxl-twitter'></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="contact.js"></script>
+</body>
+</html>

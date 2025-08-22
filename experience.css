@@ -1,0 +1,101 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+}
+/*  Navigation Bar Styles */
+.navbar {
+  background-color: #3498db;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ecf0f1;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid white;
+}
+
+
+.experience-section {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.intro p {
+  font-size: 1.1em;
+  color: #34495e;
+  margin-bottom: 30px;
+}
+
+.experience-card {
+  background-color: #ecf0f1;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #3498db;
+  border-radius: 5px;
+}
+
+.experience-card h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.experience-card p {
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.hidden {
+  display: none;
+}
+
+#more-text {
+  margin-top: 20px;
+  color: #2c3e50;
+  line-height: 1.6;
+}
