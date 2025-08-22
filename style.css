@@ -113,6 +113,13 @@ a {
   color: #fff;
 }
 
+.btn:focus,
+.experience-btn:focus,
+.contact button:focus {
+  outline: 2px solid #00abf0;
+  outline-offset: 2px;
+}
+
 .social-links a {
   font-size: 20px;
   margin: 0 10px;
@@ -194,9 +201,14 @@ a {
   text-align: center;
 }
 
-.circle {
-  transition: stroke-dashoffset 1s ease;
+.skill-circle svg {
   transform: rotate(-90deg);
+}
+
+.skill-circle .circle {
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  transition: stroke-dashoffset 1s ease;
   transform-origin: center;
 }
 
@@ -220,6 +232,7 @@ a {
 
 .project-card:hover {
   background: #002f4b;
+  transform: scale(1.03);
 }
 
 .project-card h3 {
